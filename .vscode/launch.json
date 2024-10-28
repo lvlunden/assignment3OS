@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/louise/Downloads/assignment_3a (1) 2",
-      "program": "/Users/louise/Downloads/assignment_3a (1) 2/build/Debug/outDebug"
+      "cwd": "/Users/louise/Desktop/assignment3OS",
+      "program": "/Users/louise/Desktop/assignment3OS/build/Debug/outDebug"
     }
   ]
 }
