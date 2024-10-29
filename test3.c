@@ -6,14 +6,19 @@
 #include "aq_aux.h"
 
 /**
- * This test is deviced to test whether the alarm message gets priority.
+ * Concurrent program that sends and receives a few integer messages
+ * in order to demonstrate the basic use of the thread-safe Alarm Queue Library
+ *
+ * By using sleeps we (try to) control the scheduling of the threads in
+ * order to obtain specific execution scenarios.  But there is no guarantee.
+ *
  */
 
 static AlarmQueue q;
 
 void * producer (void * arg) {
-    put_normal(q,1);
-    put_normal(q,2);
+    put_alarm(q,1);
+    put_alarm(q,2);
     put_normal(q, 3);
     put_normal(q,4);
     put_alarm(q,5);
@@ -26,6 +31,7 @@ void * consumer(void * arg) {
     msleep(100);
     get(q);
     get(q);
+    msleep(500);
     get(q);
     get(q);
     get(q);
@@ -76,3 +82,4 @@ int main(int argc, char ** argv) {
 
     return 0;
 }
+

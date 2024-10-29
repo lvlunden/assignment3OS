@@ -2,18 +2,17 @@
 #include <stdio.h>
 #include <stdint.h>
 #include <pthread.h>
-
 #include "aq.h"
-
 #include "aq_aux.h"
 
 /**
- * Concurrent program that sends and receives a few integer messages
- * in order to demonstrate the basic use of the thread-safe Alarm Queue Library
- *
- * By using sleeps we (try to) control the scheduling of the threads in
- * order to obtain specific execution scenarios.  But there is no guarantee.
- *
+ * Concurrent program that sends and receives a series of alarm messages.
+ * in order to control the scheduling of threads, we utilize the msleep()
+ * between the reception of each alarm message. This demonstrates thread-safety in real time,
+ * since we can observe that the sender cannot send another alarm message before the previous
+ * one has been received by the receiver. Before the first message is received, the size of the
+ * AlarmQueue and the amount of alarms are printed. This should always be (1,1), when an alarm
+ * message has been queued, (assuming that we only send alarm messages).
  */
 
 static AlarmQueue q;
@@ -48,7 +47,6 @@ void * consumer(void * arg) {
 
 void * emptyChecker(void * arg) {
     print_sizes(q);
-
     return 0;
 }
 
