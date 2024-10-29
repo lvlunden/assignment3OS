@@ -20,18 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ceeb67d0-6778-4f78-b229-46c3d1053a0c" name="Changes" comment="task 1 and task 2 done and manually merged to dev from Task1-Petrine (has both tasks)">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test1.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aq_aux.o" beforeDir="false" afterPath="$PROJECT_DIR$/aq_aux.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aq_demo.o" beforeDir="false" afterPath="$PROJECT_DIR$/aq_demo.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aq_seq.o" beforeDir="false" afterPath="$PROJECT_DIR$/aq_seq.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aq_test.o" beforeDir="false" afterPath="$PROJECT_DIR$/aq_test.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aq_demo.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aq_seq.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aq_test.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/aq_tsafe.o" beforeDir="false" afterPath="$PROJECT_DIR$/aq_tsafe.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo" beforeDir="false" afterPath="$PROJECT_DIR$/demo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mylib/libaq.a" beforeDir="false" afterPath="$PROJECT_DIR$/mylib/libaq.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mylib/libaq_seq.a" beforeDir="false" afterPath="$PROJECT_DIR$/mylib/libaq_seq.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test" beforeDir="false" afterPath="$PROJECT_DIR$/test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test1.c" beforeDir="false" afterPath="$PROJECT_DIR$/test1.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +155,7 @@
       <updated>1730201138332</updated>
       <workItem from="1730201139151" duration="747000" />
       <workItem from="1730203250070" duration="312000" />
-      <workItem from="1730203586390" duration="1677000" />
+      <workItem from="1730203586390" duration="4991000" />
     </task>
     <task id="LOCAL-00001" summary="nothing">
       <option name="closed" value="true" />
@@ -169,7 +165,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730201313674</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="task 1 and task 2 done and manually merged to dev from Task1-Petrine (has both tasks)">
+      <option name="closed" value="true" />
+      <created>1730205358891</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1730205358891</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,6 +181,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="nothing" />
-    <option name="LAST_COMMIT_MESSAGE" value="nothing" />
+    <MESSAGE value="task 1 and task 2 done and manually merged to dev from Task1-Petrine (has both tasks)" />
+    <option name="LAST_COMMIT_MESSAGE" value="task 1 and task 2 done and manually merged to dev from Task1-Petrine (has both tasks)" />
   </component>
 </project>
