@@ -9,6 +9,12 @@
 #include <stdlib.h>
 
 
+/**
+ * @author s235064
+ * @param aq_create()
+ *
+ */
+
 //Our node structure
 typedef struct Node {
     void *msg;
@@ -41,7 +47,7 @@ AlarmQueue aq_create( ) {
   return (AlarmQueue)newQueue;
 }
 
-int aq_send( AlarmQueue aq, void * msg, MsgKind k) {
+int aq_send(AlarmQueue aq, void * msg, MsgKind k) {
     //To handle if not an alarm message or normal message
     if (!aq) {
         return AQ_NOT_IMPL;
@@ -97,23 +103,7 @@ int aq_send( AlarmQueue aq, void * msg, MsgKind k) {
 
 
 int aq_recv( AlarmQueue aq, void * * msg) {
-  return AQ_NOT_IMPL;
-}
-
-int aq_size( AlarmQueue aq) {
-  return 0;
-}
-
-int aq_alarms( AlarmQueue aq) {
-  return 0;
-}
-
-
-
-
-//IDEA ON HOW TO IMPLEMENT THE REST:
-/*
-int aq_recv(AlarmQueue aq, void **msg) {
+    //If there is no alarm queue
     if (!aq) {
         return AQ_UNINIT; // Queue has not been initialized
     }
@@ -128,7 +118,7 @@ int aq_recv(AlarmQueue aq, void **msg) {
         *msg = node->msg;
         kind = AQ_ALARM;
 
-        // Update the alarm queue's head to the next node
+        // Update the alarm queue's head to the next node (Not sure if necessary as we can have only one alarm msg in the queue)
         queue->alarm_head = node->next;
         if (!queue->alarm_head) {
             queue->alarm_tail = NULL;
@@ -156,23 +146,25 @@ int aq_recv(AlarmQueue aq, void **msg) {
     return kind; // Return the kind of the message received
 }
 
-int aq_size(AlarmQueue aq) {
+
+
+int aq_size( AlarmQueue aq) {
     if (!aq) {
         return AQ_UNINIT; // Queue has not been initialized
     }
-
     Queue *queue = (Queue *)aq;
     return queue->alarm_count + queue->normal_count;
 }
 
-int aq_alarms(AlarmQueue aq) {
+
+int aq_alarms( AlarmQueue aq) {
     if (!aq) {
         return AQ_UNINIT; // Queue has not been initialized
     }
-
     Queue *queue = (Queue *)aq;
     return queue->alarm_count;
 }
+
 
 void aq_destroy(AlarmQueue aq) {
     if (!aq) {
@@ -200,7 +192,8 @@ void aq_destroy(AlarmQueue aq) {
 
     free(queue);
 }
-*/
+
+
 
 
 

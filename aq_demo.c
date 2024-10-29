@@ -5,7 +5,7 @@
 #include <assert.h>
 
 #include "aq.h"
-
+#include "aq_seq.c"
 #include "aux.h"
 
 /** 
