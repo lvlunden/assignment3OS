@@ -18,7 +18,6 @@
 //Our node structure
 typedef struct Node {
     void *msg;
-    MsgKind kind;
     struct Node *next;
 } Node;
 
@@ -70,7 +69,6 @@ int aq_send(AlarmQueue aq, void * msg, MsgKind k) {
 
     //to
     newNode->msg = msg;
-    newNode->kind = k;
     newNode->next = NULL;
 
 
@@ -97,9 +95,6 @@ int aq_send(AlarmQueue aq, void * msg, MsgKind k) {
 
     return 0;
 }
-
-//HAVENT IMPLEMENTED MORE FROM HERE ON
-
 
 
 int aq_recv( AlarmQueue aq, void * * msg) {
