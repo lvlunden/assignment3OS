@@ -6,7 +6,7 @@
 
 #include "aq.h"
 
-#include "aux.h"
+#include "aq_aux.h"
 
 /** 
  * Sequential program that sends and receives a few integer messages 
