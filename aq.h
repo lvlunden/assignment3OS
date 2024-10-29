@@ -14,11 +14,10 @@
  * @brief Messages are transferred as pointers to blocks allocated by malloc
  */
 
-typedef char MsgKind;
-
-#define AQ_ALARM        1   // Message is of kind alarm
-#define AQ_NORMAL       0   // Message if of kind normal
-
+typedef enum {
+    AQ_NORMAL = 0,  ///< Normal message
+    AQ_ALARM  = 1   ///< Alarm message
+} MsgKind;
 /* Error codes */
 #define AQ_UNINIT      -1   // Queue has not been initialized
 #define AQ_NULL_MSG    -2   // Sent message is NULL
