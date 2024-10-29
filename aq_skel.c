@@ -14,6 +14,7 @@ typedef struct Node {
     struct Node *next;
 } Node;
 
+
 typedef struct {
     Node *alarm_head;
     Node *alarm_tail;
@@ -31,7 +32,9 @@ typedef struct {
 
 AlarmQueue aq_create( ) {
     Queue *newQueue = (Queue *)malloc(sizeof(Queue));
-    if (newQueue) {
+    if (!newQueue) {
+       return NULL;
+    }
         newQueue->alarm_head = NULL;
         newQueue->alarm_tail = NULL;
         newQueue->normal_head = NULL;
@@ -41,6 +44,22 @@ AlarmQueue aq_create( ) {
         pthread_mutex_init(&newQueue->lock, NULL);
         pthread_cond_init(&newQueue->not_empty, NULL);
         pthread_cond_init(&newQueue->alarm_slot_free, NULL);
+
+    // Initialize mutex and condition variables, check for errors
+    if (pthread_mutex_init(&newQueue->lock, NULL) != 0) {
+        free(newQueue);
+        return NULL;
+    }
+    if (pthread_cond_init(&newQueue->not_empty, NULL) != 0) {
+        pthread_mutex_destroy(&newQueue->lock);
+        free(newQueue);
+        return NULL;
+    }
+    if (pthread_cond_init(&newQueue->alarm_slot_free, NULL) != 0) {
+        pthread_cond_destroy(&newQueue->not_empty);
+        pthread_mutex_destroy(&newQueue->lock);
+        free(newQueue);
+        return NULL;
     }
     return (AlarmQueue)newQueue;
 }
