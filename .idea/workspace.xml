@@ -19,13 +19,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ceeb67d0-6778-4f78-b229-46c3d1053a0c" name="Changes" comment="task 1 and task 2 done and manually merged to dev from Task1-Petrine (has both tasks)">
+    <list default="true" id="ceeb67d0-6778-4f78-b229-46c3d1053a0c" name="Changes" comment="minimal test, skal gøres bedre">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aq_aux.o" beforeDir="false" afterPath="$PROJECT_DIR$/aq_aux.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aq_demo.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aq_seq.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aq_test.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aq_tsafe.o" beforeDir="false" afterPath="$PROJECT_DIR$/aq_tsafe.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test" beforeDir="false" afterPath="$PROJECT_DIR$/test" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test1.c" beforeDir="false" afterPath="$PROJECT_DIR$/test1.c" afterDir="false" />
     </list>
@@ -155,7 +150,7 @@
       <updated>1730201138332</updated>
       <workItem from="1730201139151" duration="747000" />
       <workItem from="1730203250070" duration="312000" />
-      <workItem from="1730203586390" duration="4991000" />
+      <workItem from="1730203586390" duration="6584000" />
     </task>
     <task id="LOCAL-00001" summary="nothing">
       <option name="closed" value="true" />
@@ -173,7 +168,23 @@
       <option name="project" value="LOCAL" />
       <updated>1730205358891</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="minimal test, skal gøres bedre">
+      <option name="closed" value="true" />
+      <created>1730208840706</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1730208840706</updated>
+    </task>
+    <task id="LOCAL-00004" summary="minimal test, skal gøres bedre">
+      <option name="closed" value="true" />
+      <created>1730208865338</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1730208865338</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,6 +193,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="nothing" />
     <MESSAGE value="task 1 and task 2 done and manually merged to dev from Task1-Petrine (has both tasks)" />
-    <option name="LAST_COMMIT_MESSAGE" value="task 1 and task 2 done and manually merged to dev from Task1-Petrine (has both tasks)" />
+    <MESSAGE value="minimal test, skal gøres bedre" />
+    <option name="LAST_COMMIT_MESSAGE" value="minimal test, skal gøres bedre" />
   </component>
 </project>

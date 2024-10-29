@@ -48,6 +48,8 @@ void * consumer(void * arg) {
 
 void * emptyChecker(void * arg) {
     print_sizes(q);
+
+    return 0;
 }
 
 int main(int argc, char ** argv) {
@@ -66,7 +68,6 @@ int main(int argc, char ** argv) {
 
     void * res1;
     void * res2;
-    void * res3;
 
     printf("----------------\n");
 
@@ -78,10 +79,10 @@ int main(int argc, char ** argv) {
     /* Join with all threads */
     pthread_join(t1, &res1);
     pthread_join(t2, &res2);
-    pthread_join(t3,&res3);
+    pthread_join(t3,NULL);
 
     printf("----------------\n");
-    printf("Threads terminated with %ld, %ld\n", (uintptr_t) res1, (uintptr_t) res2), (uintptr_t) res3;
+    printf("Threads terminated with %ld, %ld\n", (uintptr_t) res1, (uintptr_t) res2);
 
     print_sizes(q);
 
