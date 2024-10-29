@@ -166,32 +166,3 @@ int aq_alarms( AlarmQueue aq) {
     return queue->alarm_count;
 }
 
-
-void aq_destroy(AlarmQueue aq) {
-    if (!aq) {
-        return;
-    }
-
-    Queue *queue = (Queue *)aq;
-    Node *current = queue->alarm_head;
-    Node *next;
-
-    // Free all nodes in the alarm queue
-    while (current) {
-        next = current->next;
-        free(current);
-        current = next;
-    }
-
-    // Free all nodes in the normal queue
-    current = queue->normal_head;
-    while (current) {
-        next = current->next;
-        free(current);
-        current = next;
-    }
-
-    free(queue);
-}
-
-

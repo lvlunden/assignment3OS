@@ -19,7 +19,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ceeb67d0-6778-4f78-b229-46c3d1053a0c" name="Changes" comment="testing demo" />
+    <list default="true" id="ceeb67d0-6778-4f78-b229-46c3d1053a0c" name="Changes" comment="task 1 and task 2 done and manually merged to dev from Task1-Petrine (has both tasks)">
+      <change beforePath="$PROJECT_DIR$/aq_seq.c" beforeDir="false" afterPath="$PROJECT_DIR$/aq_seq.c" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,6 +81,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/Bruger/Desktop/Operativsys/assignment3OS",
     "node.js.detected.package.eslint": "true",
@@ -156,6 +159,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="nothing" />
-    <option name="LAST_COMMIT_MESSAGE" value="nothing" />
+    <MESSAGE value="task 1 and task 2 done and manually merged to dev from Task1-Petrine (has both tasks)" />
+    <option name="LAST_COMMIT_MESSAGE" value="task 1 and task 2 done and manually merged to dev from Task1-Petrine (has both tasks)" />
   </component>
 </project>
