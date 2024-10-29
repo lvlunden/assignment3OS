@@ -15,9 +15,11 @@
  *
  */
 
+
 //Our node structure
 typedef struct Node {
     void *msg;
+    MsgKind kind;
     struct Node *next;
 } Node;
 
@@ -69,6 +71,7 @@ int aq_send(AlarmQueue aq, void * msg, MsgKind k) {
 
     //to
     newNode->msg = msg;
+    newNode->kind = k;
     newNode->next = NULL;
 
 
@@ -95,6 +98,9 @@ int aq_send(AlarmQueue aq, void * msg, MsgKind k) {
 
     return 0;
 }
+
+//HAVENT IMPLEMENTED MORE FROM HERE ON
+
 
 
 int aq_recv( AlarmQueue aq, void * * msg) {
@@ -159,3 +165,33 @@ int aq_alarms( AlarmQueue aq) {
     Queue *queue = (Queue *)aq;
     return queue->alarm_count;
 }
+
+
+void aq_destroy(AlarmQueue aq) {
+    if (!aq) {
+        return;
+    }
+
+    Queue *queue = (Queue *)aq;
+    Node *current = queue->alarm_head;
+    Node *next;
+
+    // Free all nodes in the alarm queue
+    while (current) {
+        next = current->next;
+        free(current);
+        current = next;
+    }
+
+    // Free all nodes in the normal queue
+    current = queue->normal_head;
+    while (current) {
+        next = current->next;
+        free(current);
+        current = next;
+    }
+
+    free(queue);
+}
+
+
