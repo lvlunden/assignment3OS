@@ -19,11 +19,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ceeb67d0-6778-4f78-b229-46c3d1053a0c" name="Changes" comment="minimal test, skal gøres bedre">
-      <change afterPath="$PROJECT_DIR$/test4.c" afterDir="false" />
+    <list default="true" id="ceeb67d0-6778-4f78-b229-46c3d1053a0c" name="Changes" comment="Flere test. Vi burde være godt dækket nu.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test" beforeDir="false" afterPath="$PROJECT_DIR$/test" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test3.c" beforeDir="false" afterPath="$PROJECT_DIR$/test3.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test4.c" beforeDir="false" afterPath="$PROJECT_DIR$/test4.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +154,10 @@
       <workItem from="1730201139151" duration="747000" />
       <workItem from="1730203250070" duration="312000" />
       <workItem from="1730203586390" duration="19350000" />
-      <workItem from="1730271621643" duration="1418000" />
+      <workItem from="1730271621643" duration="1550000" />
+      <workItem from="1730276295059" duration="116000" />
+      <workItem from="1730276435611" duration="288000" />
+      <workItem from="1730276753332" duration="705000" />
     </task>
     <task id="LOCAL-00001" summary="nothing">
       <option name="closed" value="true" />
@@ -213,7 +215,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730235646493</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Flere test. Vi burde være godt dækket nu.">
+      <option name="closed" value="true" />
+      <created>1730276176309</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1730276176309</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,6 +233,7 @@
     <MESSAGE value="nothing" />
     <MESSAGE value="task 1 and task 2 done and manually merged to dev from Task1-Petrine (has both tasks)" />
     <MESSAGE value="minimal test, skal gøres bedre" />
-    <option name="LAST_COMMIT_MESSAGE" value="minimal test, skal gøres bedre" />
+    <MESSAGE value="Flere test. Vi burde være godt dækket nu." />
+    <option name="LAST_COMMIT_MESSAGE" value="Flere test. Vi burde være godt dækket nu." />
   </component>
 </project>

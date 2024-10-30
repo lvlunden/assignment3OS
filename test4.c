@@ -34,6 +34,7 @@ void * consumer(void * arg) {
 }
 
 void * emptyChecker(void * arg) {
+    msleep(500);
     print_sizes(q);
 
     return 0;
