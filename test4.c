@@ -20,23 +20,13 @@ void * producer (void * arg) {
     put_normal(q,1);
     put_alarm(q,2);
     put_normal(q, 3);
-    put_alarm(q,4);
-    put_alarm(q,5);
+    put_normal(q,4);
+    put_normal(q,5);
     put_normal(q,6);
     return 0;
 }
 
 void * consumer(void * arg) {
-    msleep(250);
-    get(q);
-    msleep(5000);
-    get(q);
-    get(q);
-    get(q);
-    get(q);
-    get(q);
-
-
     return 0;
 }
 
