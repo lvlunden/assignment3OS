@@ -17,16 +17,18 @@
 static AlarmQueue q;
 
 void * producer (void * arg) {
+    put_normal(q,1);
+    put_alarm(q,2);
+    put_normal(q, 3);
+    put_alarm(q,4);
+    put_alarm(q,5);
+    put_normal(q,6);
     return 0;
 }
 
 void * consumer(void * arg) {
     get(q);
-    get(q);
-    get(q);
-    get(q);
-    get(q);
-    get(q);
+
 
     return 0;
 }
@@ -73,4 +75,3 @@ int main(int argc, char ** argv) {
 
     return 0;
 }
-
